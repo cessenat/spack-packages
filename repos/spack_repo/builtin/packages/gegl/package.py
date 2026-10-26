@@ -36,6 +36,7 @@ class Gegl(MesonPackage):
     depends_on("pkgconfig", type="build")
     depends_on("cmake@3.4:", type="build")
     depends_on("babl")
+    depends_on("babl@0.1.116:", when="@0.4.72:")
     depends_on("glib")
     depends_on("gobject-introspection")
     depends_on("json-glib")
